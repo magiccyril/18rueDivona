@@ -1,0 +1,26 @@
+{
+    "name": "18ruedivona/website",
+    "description": "18 rue Divona website",
+    "require": {
+        "php": ">=5.3.3",
+        "silex/silex": "1.0.*",
+        "silex/web-profiler": "1.0.*",
+        "symfony/class-loader": "~2.2",
+        "symfony/config": "~2.3",
+        "symfony/form": "~2.3",
+        "symfony/locale": "~2.3",
+        "symfony/monolog-bridge": "~2.3",
+        "symfony/translation": "~2.3",
+        "symfony/twig-bridge": "~2.3",
+        "symfony/validator": "~2.3",
+        "symfony/yaml": "~2.3",
+        "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev",
+        "twig/twig": ">=1.8,<2.0-dev"
+    },
+    "authors": [
+        {
+            "name": "Cyril Gravelier",
+            "email": "cyril@18ruedivona.eu"
+        }
+    ]
+}

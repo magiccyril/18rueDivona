@@ -1,0 +1,3 @@
+[submodule "vendor/unsemantic"]
+	path = vendor/unsemantic
+	url = https://github.com/nathansmith/unsemantic.git

@@ -1,8 +1,0 @@
-cache: CACHE_LIFETIME_IN_SECONDS
-mail:
-    smtp: SMTP
-    port: PORT
-    username: USERNAME
-    password: PASSWORD
-    subject: SUBJECT
-    to: TO@DOMAIN.TLD

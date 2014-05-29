@@ -1,0 +1,965 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+sub,
+sup,
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg {
+  overflow: hidden;
+}
+
+body {
+  font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+pre,
+code {
+  font-family: "DejaVu Sans Mono", Monaco, Consolas, monospace;
+}
+
+hr {
+  border: 0 #cccccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+}
+}
+@media screen {
+  .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .container:before, #teaser h2:before, #skills h2:before, #contact h2:before, .clearfix:before,
+  .container:after,
+  #teaser h2:after,
+  #skills h2:after,
+  #contact h2:after,
+  .clearfix:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .container:after, #teaser h2:after, #skills h2:after, #contact h2:after, .clearfix:after {
+    clear: both;
+  }
+
+  .container, #teaser h2, #skills h2, #contact h2, .clearfix {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #site-logo, #teaser .illustration, #teaser .summary, #skills .skills-group, #contact .summary p, #contact .summary ul, #contact form fieldset, #site-footer .summary, #contact .summary, #contact form, #teaser h2, #skills h2, #contact h2, #skills article {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* <IE7> */
+    *padding-left: 0;
+    *padding-right: 0;
+    /* </IE7> */
+  }
+  #site-logo > *, #teaser .illustration > *, #teaser .summary > *, #skills .skills-group > *, #contact .summary p > *, #contact .summary ul > *, #contact form fieldset > *, #site-footer .summary > *, #contact .summary > *, #contact form > *, #teaser h2 > *, #skills h2 > *, #contact h2 > *, #skills article > * {
+    /* <IE7> */
+    *margin-left: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+    *margin-right: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+    /* </IE7> */
+  }
+
+  #skills .skills-group, #contact .summary, #contact form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #site-logo {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #site-logo {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .illustration {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .summary, #skills .skills-group, #contact .summary p, #contact .summary ul, #contact form fieldset, #site-footer .summary {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #skills article {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser h2, #skills h2, #contact h2 {
+    clear: both;
+    width: 100%;
+  }
+
+  body {
+    min-width: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #site-logo:before, #teaser .summary:before, #skills .skills-group:before, #skills article:before, #contact .summary:before, #contact .summary p:before, #contact .summary ul:before, #contact form:before, #contact form fieldset:before, #site-footer .summary:before, #teaser h2:before, #skills h2:before, #contact h2:before,
+  #site-logo:after,
+  #teaser .summary:after,
+  #skills .skills-group:after,
+  #skills article:after,
+  #contact .summary:after,
+  #contact .summary p:after,
+  #contact .summary ul:after,
+  #contact form:after,
+  #contact form fieldset:after,
+  #site-footer .summary:after,
+  #teaser h2:after,
+  #skills h2:after,
+  #contact h2:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  #site-logo:after, #teaser .summary:after, #skills .skills-group:after, #skills article:after, #contact .summary:after, #contact .summary p:after, #contact .summary ul:after, #contact form:after, #contact form fieldset:after, #site-footer .summary:after, #teaser h2:after, #skills h2:after, #contact h2:after {
+    clear: both;
+  }
+
+  #site-logo, #teaser .summary, #skills .skills-group, #skills article, #contact .summary, #contact .summary p, #contact .summary ul, #contact form, #contact form fieldset, #site-footer .summary, #teaser h2, #skills h2, #contact h2 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  #skills .skills-group, #contact .summary, #contact form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #teaser .illustration {
+    display: none !important;
+  }
+
+  #site-logo {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #site-logo {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .illustration {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .summary, #skills .skills-group, #contact .summary p, #contact .summary ul, #contact form fieldset, #site-footer .summary {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #skills article {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #site-logo, #teaser .summary, #skills .skills-group, #skills article, #contact .summary, #contact .summary p, #contact .summary ul, #contact form, #contact form fieldset, #site-footer .summary, #teaser h2, #skills h2, #contact h2 {
+    clear: both;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #teaser .summary:before, #skills .skills-group:before, #contact .summary:before, #contact .summary p:before, #contact .summary ul:before, #contact form:before, #contact form fieldset:before, #site-footer .summary:before, #teaser h2:before, #skills h2:before, #contact h2:before,
+  #teaser .summary:after,
+  #skills .skills-group:after,
+  #contact .summary:after,
+  #contact .summary p:after,
+  #contact .summary ul:after,
+  #contact form:after,
+  #contact form fieldset:after,
+  #site-footer .summary:after,
+  #teaser h2:after,
+  #skills h2:after,
+  #contact h2:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  #teaser .summary:after, #skills .skills-group:after, #contact .summary:after, #contact .summary p:after, #contact .summary ul:after, #contact form:after, #contact form fieldset:after, #site-footer .summary:after, #teaser h2:after, #skills h2:after, #contact h2:after {
+    clear: both;
+  }
+
+  #teaser .summary, #skills .skills-group, #contact .summary, #contact .summary p, #contact .summary ul, #contact form, #contact form fieldset, #site-footer .summary, #teaser h2, #skills h2, #contact h2 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  #skills .skills-group, #contact .summary, #contact form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #site-logo {
+    position: relative;
+  }
+
+  #teaser .illustration {
+    display: none !important;
+  }
+
+  #site-logo {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #site-logo {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .illustration {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .summary, #skills .skills-group, #contact .summary p, #contact .summary ul, #contact form fieldset, #site-footer .summary {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #skills article {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .summary, #skills .skills-group, #contact .summary, #contact .summary p, #contact .summary ul, #contact form, #contact form fieldset, #site-footer .summary, #teaser h2, #skills h2, #contact h2 {
+    clear: both;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #teaser h2:before, #skills h2:before, #contact h2:before,
+  #teaser h2:after,
+  #skills h2:after,
+  #contact h2:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  #teaser h2:after, #skills h2:after, #contact h2:after {
+    clear: both;
+  }
+
+  #teaser h2, #skills h2, #contact h2 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  #skills .skills-group, #contact .summary, #contact form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #site-logo, #contact .summary, #contact form {
+    position: relative;
+  }
+
+  #site-logo {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #site-logo {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .illustration {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser .summary, #skills .skills-group, #contact .summary p, #contact .summary ul, #contact form fieldset, #site-footer .summary {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #contact .summary, #contact form {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #skills article {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  #teaser h2, #skills h2, #contact h2 {
+    clear: both;
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: "Arvo";
+  src: url('fonts/arvo/Arvo-Regular-webfont.eot');
+  src: url('fonts/arvo/Arvo-Regular-webfont.eot?#iefix') format('eot'), url('fonts/arvo/Arvo-Regular-webfont.woff') format('woff'), url('fonts/arvo/Arvo-Regular-webfont.ttf') format('truetype'), url('fonts/arvo/Arvo-Regular-webfont.svg#ArvoRegular') format('svg');
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url('fonts/josefin-slab/JosefinSlab-SemiBold-webfont.eot');
+  src: url('fonts/josefin-slab/JosefinSlab-SemiBold-webfont.eot?#iefix') format('eot'), url('fonts/josefin-slab/JosefinSlab-SemiBold-webfont.woff') format('woff'), url('fonts/josefin-slab/JosefinSlab-SemiBold-webfont.ttf') format('truetype'), url('fonts/josefin-slab/JosefinSlab-SemiBold-webfont.svg#JosefinSlabSemiBold') format('svg');
+}
+
+#skills article h3, #contact form label, #contact form .actions .submit {
+  font-family: 'Arvo', serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Josefin', serif;
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1.33333em;
+}
+
+body {
+  color: #464646;
+}
+
+a {
+  color: #e64e39;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #69180d;
+}
+
+.container {
+  position: relative;
+}
+
+.icons-email {
+  background: url('../img/icons-s8b1eb716ef.png') 100% 10px no-repeat;
+  display: block;
+  padding-right: 36px;
+}
+
+.icons-phone {
+  background: url('../img/icons-s8b1eb716ef.png') 100% -184px no-repeat;
+  display: block;
+  padding-right: 36px;
+}
+
+.icons-twitter {
+  background: url('../img/icons-s8b1eb716ef.png') 100% -378px no-repeat;
+  display: block;
+  padding-right: 36px;
+}
+
+.skills-icon-html {
+  background: url('../img/skills-icons-s521c37e210.png') 50% -432px no-repeat;
+}
+
+.skills-icon-drupal {
+  background: url('../img/skills-icons-s521c37e210.png') 50% -288px no-repeat;
+}
+
+.skills-icon-symfony {
+  background: url('../img/skills-icons-s521c37e210.png') 50% -144px no-repeat;
+}
+
+.skills-icon-wordpress {
+  background: url('../img/skills-icons-s521c37e210.png') 50% 0 no-repeat;
+}
+
+.skills-icon-ecommerce {
+  background: url('../img/skills-icons-s521c37e210.png') 50% -576px no-repeat;
+}
+
+.skills-icon-android {
+  background: url('../img/skills-icons-s521c37e210.png') 50% -720px no-repeat;
+}
+
+#site-header {
+  background: #333;
+  min-height: 228px;
+  height: auto !important;
+  height: 228px;
+}
+
+#site-logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/card.png?1368104173');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 381px;
+  height: 228px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  #site-header {
+    background: url('../img/bg-header.png?1368104895');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    min-height: 630px;
+    height: auto !important;
+    height: 630px;
+  }
+
+  #site-logo {
+    margin-top: 6em;
+  }
+}
+#teaser {
+  background: #3ea9b3;
+  border: 1px solid #31858d;
+  border-width: 1px 0;
+  color: #FFF;
+  padding-top: 1.5em;
+}
+#teaser .summary {
+  font-size: 1.125em;
+  line-height: 2.66667em;
+}
+#teaser .illustration {
+  position: absolute;
+  right: 0;
+}
+#teaser .illustration img {
+  width: 100%;
+}
+
+#skills {
+  background: #FFF;
+  padding-top: 7.5em;
+  padding-bottom: 4.5em;
+}
+#skills h2 {
+  color: #e64e39;
+}
+#skills article h3 {
+  padding-top: 144px;
+  text-align: center;
+}
+
+#contact {
+  background: #e64e39;
+  border-top: 1px solid #d2311a;
+  color: #FFF;
+  padding-top: 4.5em;
+  padding-bottom: 7.5em;
+}
+#contact h2 {
+  text-align: center;
+}
+#contact a {
+  color: #FFF;
+  text-decoration: underline;
+}
+#contact a:hover, #contact a:focus {
+  color: #69180d;
+}
+#contact hr {
+  border-color: #db331c;
+}
+#contact .summary {
+  font-size: 1.125em;
+  line-height: 2.66667em;
+}
+#contact .summary ul {
+  list-style: none;
+  text-align: right;
+}
+#contact form {
+  font-size: 1.125em;
+  line-height: 2.66667em;
+}
+#contact form fieldset {
+  margin-bottom: 0;
+}
+#contact form label {
+  font-size: 1.25em;
+  line-height: 1.8em;
+  display: block;
+}
+#contact form .input {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #f4b3aa;
+  border: none;
+  outline: none;
+  padding: 2%;
+  max-width: 96%;
+  width: 96%;
+}
+#contact form .input:focus {
+  background: #FFF;
+}
+#contact form .input:invalid {
+  background: #f4b3aa url('../img/icons-s8b1eb716ef.png') 98% -761px no-repeat;
+}
+#contact form .input:focus:invalid {
+  background: white url('../img/icons-s8b1eb716ef.png') 98% -761px no-repeat;
+}
+#contact form .input:valid {
+  background: #f4b3aa url('../img/icons-s8b1eb716ef.png') 98% -572px no-repeat;
+}
+#contact form .input:focus:valid {
+  background: white url('../img/icons-s8b1eb716ef.png') 98% -572px no-repeat;
+}
+#contact form textarea {
+  height: 170px;
+  max-height: 170px;
+}
+#contact form .actions {
+  text-align: right;
+}
+#contact form .actions .submit {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  background: #3ea9b3;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  padding: 1% 5%;
+}
+#contact form .actions .submit:hover, #contact form .actions .submit:focus {
+  background: #1d5054;
+}
+#contact form .actions .submit:active {
+  background: #f4b3aa;
+  color: #8e2112;
+}
+
+#site-footer {
+  background: #464646;
+  border-top: 1px solid #2d2d2d;
+  color: #FFF;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  padding-top: 1.5em;
+}
+#site-footer ul {
+  list-style: none;
+  margin: 0;
+}
+#site-footer li {
+  margin: 0;
+}
+#site-footer a {
+  color: #FFF;
+}

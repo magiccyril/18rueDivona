@@ -1,5 +1,0 @@
-*.DS_Store
-/.sass-cache
-/phpunit.xml
-/vendor/
-/composer.lock

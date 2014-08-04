@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            18 rue Divona
+tagline:          'Carnet de notes'
+description:      'Carnet de notes, et tableau de bord personnel.'
+url:              http://18ruedivona.eu
+baseurl:          '/'
+paginate:         5
+
+author:
+  name:           'Cyril Gravelier'
+  url:            https://twitter.com/magiccyril
+
+# Custom vars
+version:          0.0.1
+
+social:
+  facebook:         http://facebook.com/magiccyril
+  twitter:          http://twitter.com/magiccyril
+  github:           https://github.com/magiccyril

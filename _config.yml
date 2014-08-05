@@ -6,7 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-baseurl:          18rueDivona
+baseurl:          /18rueDivona
 title:            18 rue Divona
 tagline:          'Carnet de notes'
 description:      'Carnet de notes, et tableau de bord personnel.'

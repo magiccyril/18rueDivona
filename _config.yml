@@ -6,12 +6,11 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-baseurl:          /18rueDivona
 title:            18 rue Divona
 tagline:          'Carnet de notes'
 description:      'Carnet de notes, et tableau de bord personnel.'
 url:              http://18ruedivona.eu
-baseurl:          '/'
+baseurl:          '/18rueDivona'
 paginate:         5
 
 author:

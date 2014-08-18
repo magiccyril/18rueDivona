@@ -1,106 +1,38 @@
-# HMFAYSAL V2
+# Kasper
 
-**[HMFAYSAL V2](http://v2.theevilgenius.tk)** is a two column responsive Jekyll theme by Engineer [Hossain Mohd Faysal](http://hmfaysal.tk) featuring a slide out drawer menu in mobile browsers.
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll. 
+Feel free to fork, change, modify and re-use it.
 
-## HMFAYSAL V2 is all about:
+## How to use it
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments. Content first; other widget nonsense never.
-* Large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://v2.theevilgenius.tk/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://v2.theevilgenius.tk/articles/code-highlighting-post/) to make your code examples look snazzy.
+Simply clone this repository, and then run `jekyll -w serve` inside the directory.
 
-![screenshot of HMFAYSAL V2 theme](http://v2.theevilgenius.tk/images/Jekyll-HMFAYSAL-Theme.jpg)
+Kasper theme includes:
 
-General notes and suggestions for customizing HMFAYSAL V2 Theme.
+* Pagination
+* Rss
+* Google Analytics Tracking code
+* Code Syntax Highlight
+* Author's profile with picture
+* Disqus comments
 
-## Basic Setup
+## Screenshots
 
-1. [Install Jekyll](http://jekyllrb.com) if you haven't already.
-2. Fork the [Jekyll HMFAYSAL V2 Theme repo](http://github.com/hmfaysal/Jekyll-HMFAYSAL-V2-Theme/)
-3. Clone the repo you just forked to your computer.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
+![index page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-index.png)
+![post page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-post.png)
 
-[Demo the Theme](http://v2.theevilgenius.tk)
 
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site. Also type in `chcp 65001` if the prompt shows UTF-8 or IBM47 error.
+## Thanks 
+Most of the work as been already done by the Ghost team, I've just ported Casper to Jekyll. 
+I've also added few things for specifid to Jekyll and some minor style changes.
 
----
+## Copyright & License
 
-## Setup for an Existing Jekyll site
+Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
 
-1. Clone the following folders: `_includes`, `_layouts`, `assets`, and `images`.
-2. Clone the following files and personalize content as need: `about.md`, `articles.html`, `index.md`, `feed.xml`, `sitemap.xml`
-3. Set the following variables in your `config.yml` file:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-``` yaml
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: shortname
-url:              http://your-website.com
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-# Owner/author information
-owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  hmfaysalsocial:	
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Articles
-    url: /articles/
-  - title: Setup
-    url: /theme-setup/
-  - title: T-Details
-    url: /technical-details/
-  - title: The Evil-Genius
-    url: http://www.theevilgenius.tk/
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
-
-```
-
----
-
-## Questions?
-
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@hmfaysal](http://twitter.com/hmfaysal) or [file a GitHub Issue](https://github.com/hmfaysal/Jekyll-HMFAYSAL-V2-Theme/issues/new). And if you make something cool with this theme feel free to let me know.
-
----
-
-## License
-
-This theme is free and open source software, distributed under the [GNU General Public License](http://v2.theevilgenius.tk/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

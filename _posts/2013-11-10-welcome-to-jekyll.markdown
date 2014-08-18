@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2013-11-10 10:18:00
+title: "Nouveau site !"
+date: {}
 categories: jekyll update
+published: true
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Ça fait un moment que j'ai envie de rassembler plusieurs choses dans un même endroit. J'ai commencé à quantifier certaines choses : nombre de pas, poids, masse graisseuse, sommeil, étages gravis, kilomètres courus, kilomètres faits en vélo, etc.
 
-Jekyll also offers powerful support for code snippets:
+Toutes ces données sont éparpillées à différents endroits. J'aimerai centraliser cela.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## Pourquoi quantifier ?
+Je quantifie parce que je trouve que c'est rigolo, c'est peu ou pas de contraire, et peut-être que ça permet d'en apprendre plus sur soi même.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+## Pourquoi rassembler tout sur un site et le rendre public ?
+Actuellement mes données sont à différents endroits, sur différents sites, différentes applications. Ce n'est pas très pratique pour croiser toutes les informations.
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Il se trouve que je sais bricoler des sites, alors pour faire un "tableau de bord" je vais naturellement le faire sous forme d'un site. Maintenant il est vrai que je ne suis pas obligé de le rendre public. Mais après tout, pourquoi pas ? Le rendre privé me rajoute du travail, et je n'ai rien à cacher. Je choisis ce que je veux rendre public et exposer.
+
+## Quand ?
+Actuellement rien n’est fait. J'ai bien quelques prototypes, quelques bouts de code par-ci par-là, mais il reste tout à faire.
+
+Les données seront exposées sur [18 rue Divona](http://18ruedivona.eu), et en attendant je commence un blog où je pourrais faire part de mes avancements, et de mes ressentis.

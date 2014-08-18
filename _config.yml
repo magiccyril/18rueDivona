@@ -1,6 +1,6 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: 18 rue Divona
+description: Carnet de notes
+meta_description: "Carnet de notes et tableaux de bord abordant la quantification personnels (quantified self)"
 
 markdown: redcarpet
 pygments: true
@@ -8,5 +8,5 @@ logo: false
 paginate: 15
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'http://18ruedivona.eu'
+author:         'Cyril Gravelier'

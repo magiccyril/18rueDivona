@@ -3,7 +3,7 @@ description: Carnet de notes
 meta_description: "Carnet de notes et tableaux de bord abordant la quantification personnels (quantified self)"
 
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 logo: false
 paginate: 15
 

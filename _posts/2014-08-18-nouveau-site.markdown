@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-Ça fait un moment que j'ai envie de rassembler plusieurs choses dans un même endroit. J'ai commencé à quantifier certaines choses : nombre de pas, poids, masse graisseuse, sommeil, étages gravis, kilomètres courus, kilomètres faits en vélo, etc.
+Ça fait un moment que j'ai envie de rassembler plusieurs données dans un même endroit. J'ai commencé à quantifier certaines choses : nombre de pas, poids, masse graisseuse, sommeil, étages gravis, kilomètres courus, kilomètres faits en vélo, etc.
 
 Toutes ces données sont éparpillées à différents endroits. J'aimerai centraliser cela.
 

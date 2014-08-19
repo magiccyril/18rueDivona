@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: ""
+title: "Semi-marathon du Porge 2014"
 categories: 
   - sport
 date: "2014-08-19 17:01:00"

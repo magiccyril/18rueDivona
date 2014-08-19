@@ -37,8 +37,9 @@ prose:
     - index.html
     - LICENSE.txt
     - links.jsonp
-    - /_layouts
     - /_includes
+    - /_layouts
+    - /assets
   metadata:
     _posts:
       - name: "layout"

@@ -15,6 +15,12 @@ permalink: /blog/:year/:month/:title
 url:            'http://18ruedivona.eu'
 author:         'Cyril Gravelier'
 
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: 'divona'
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: 'UA-27130228-2'
+
 # Prose.io configuration
 prose:
   rooturl: '_posts'

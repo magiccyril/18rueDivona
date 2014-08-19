@@ -11,6 +11,8 @@ published: true
 
 Toutes ces données sont éparpillées à différents endroits. J'aimerai centraliser cela.
 
+<!--more-->
+
 ## Pourquoi quantifier ?
 Je quantifie parce que je trouve que c'est rigolo, c'est peu ou pas de contraire, et peut-être que ça permet d'en apprendre plus sur soi même.
 

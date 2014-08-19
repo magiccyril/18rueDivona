@@ -1,19 +1,21 @@
-name: 18 rue Divona
-description: Carnet de notes
-meta_description: "Carnet de notes et tableaux de bord abordant la quantification personnels (quantified self)"
-
-# Conversion
-markdown: redcarpet
-highlighter: pygments
+# Theme settings
 logo: false
-paginate: 15
-
-# Outputting
-permalink: /blog/:year/:month/:title
+name:             "18 rue Divona"
+description:      "Carnet de notes"
+meta_description: "Carnet de notes et tableaux de bord abordant la quantification personnels (quantified self)"
 
 # Details for the RSS feed generator
 url:            'http://18ruedivona.eu'
 author:         'Cyril Gravelier'
+
+# Conversion
+markdown:           redcarpet
+highlighter:        pygments
+excerpt_separator:  "\n\n"
+paginate:           15
+
+# Outputting
+permalink: /blog/:year/:month/:title
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 'divona'
@@ -23,10 +25,10 @@ google_analytics: 'UA-27130228-2'
 
 # Prose.io configuration
 prose:
-  rooturl: '_posts'
-  siteurl: 'http://18ruedivona.eu/'
-  relativeLinks: 'http://18ruedivona.eu/links.jsonp'
-  media: 'media'
+  rooturl:        '_posts'
+  siteurl:        'http://18ruedivona.eu/'
+  relativeLinks:  'http://18ruedivona.eu/links.jsonp'
+  media:          'media'
   ignore:
     - index.md
     - _config.yml
@@ -36,25 +38,25 @@ prose:
     _posts:
       - name: "layout"
         field:
-          element: "hidden"
-          value: "post"
+          element:  "hidden"
+          value:    "post"
       - name: "title"
         field:
-          element: "text"
-          label: "Title"
+          element:  "text"
+          label:    "Title"
       - name: "date"
         field:
-          element: "text"
-          label: "Date"
-          help: "YYYY-MM-DD hh:mm:ss"
+          element:  "text"
+          label:    "Date"
+          help:     "YYYY-MM-DD hh:mm:ss"
       - name: "categories"
         field:
-          element: "multiselect"
-          label: "Add categories"
-          placeholder: "Choose categories"
-          alterable: true
+          element:      "multiselect"
+          label:        "Add categories"
+          placeholder:  "Choose categories"
+          alterable:    true
           options:
-            - name: "Sport"
-              value: "sport"
-            - name: "Quantified Self"
-              value: "quantified self"
+            - name:   "Sport"
+              value:  "sport"
+            - name:   "Quantified Self"
+              value:  "quantified self"

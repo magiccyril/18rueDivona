@@ -25,7 +25,7 @@ google_analytics: 'UA-27130228-2'
 
 # Prose.io configuration
 prose:
-  rooturl:        '_posts'
+  rooturl:        ''
   siteurl:        'http://18ruedivona.eu/'
   relativeLinks:  'http://18ruedivona.eu/links.jsonp'
   media:          'media'

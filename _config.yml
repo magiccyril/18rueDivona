@@ -56,3 +56,5 @@ prose:
           options:
             - name: "Sport"
               value: "sport"
+            - name: "Quantified Self"
+              value: "quantified self"

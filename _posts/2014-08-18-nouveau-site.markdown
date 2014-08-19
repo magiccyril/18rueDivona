@@ -2,7 +2,8 @@
 layout: post
 title: "Nouveau site !"
 date: "2014-08-18 12:00:00"
-categories: jekyll update
+categories: 
+  - Quantified Self
 published: true
 ---
 

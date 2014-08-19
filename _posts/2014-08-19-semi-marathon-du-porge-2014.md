@@ -8,9 +8,7 @@ date: "2014-08-19 17:01:00"
 ---
 
 Je me suis lancé bêtement deux défis : faire un triathlon (j'aborderai ce défi plus tard) et **finir un marathon avant mes 30 ans**. Pour réussir cela, j'ai commencé, l'année dernière (le 22/05/2013), à courir en suivant un plan d'entrainement d'endurance générale fourni par Polar.
-
 <iframe width='465' height='548' frameborder='0' src='http://connect.garmin.com:80/activity/embed/421808365'></iframe>
-
 Je cours avec un cardiofrequencemetre, ça me permet de structurer mes séances, et ne pas partir dans tous les sens : ça me limite, et me cadre.
 
 
@@ -31,6 +29,7 @@ Madame s'est inscrite pour sa première course : un 8km. Il lui faut un programm
 On fait donc un programme pour faire 10km en 50minutes. Madame finit dans le premier quart du classement de sa course, je fais mon triathlon.
 
 Entre temps j'ai réussi à m'inscrire au marathon du médoc 2014. Et j'ai un programme d'entrainement sur 10 semaines pour le **finir entre 4h, et 4h15**. Je commence à tout planifier, et on comble un mois de vide par une préparation semi-marathon.
+
 
 
 ## Semi-marathon du Porge 2014

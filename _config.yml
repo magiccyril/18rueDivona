@@ -2,10 +2,14 @@ name: 18 rue Divona
 description: Carnet de notes
 meta_description: "Carnet de notes et tableaux de bord abordant la quantification personnels (quantified self)"
 
+# Conversion
 markdown: redcarpet
 highlighter: pygments
 logo: false
 paginate: 15
+
+# Outputting
+permalink: /blog/:year/:month/:title
 
 # Details for the RSS feed generator
 url:            'http://18ruedivona.eu'

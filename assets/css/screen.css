@@ -547,6 +547,12 @@ margin on the iframe, cause it breaks stuff. */
     height: auto;
 }
 
+.post-excerpt iframe,
+.post-content iframe {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 /* The share and comments area after the post */
 .post-footer {
     position: relative;

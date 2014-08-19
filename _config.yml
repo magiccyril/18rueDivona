@@ -37,6 +37,7 @@ prose:
     - index.html
     - LICENSE.txt
     - links.jsonp
+    - README.md
     - /_includes
     - /_layouts
     - /assets

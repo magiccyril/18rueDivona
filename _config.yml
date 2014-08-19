@@ -11,7 +11,7 @@ author:         'Cyril Gravelier'
 # Conversion
 markdown:           redcarpet
 highlighter:        pygments
-excerpt_separator:  "\n\n"
+excerpt_separator:  "<!--more-->"
 paginate:           15
 
 # Outputting

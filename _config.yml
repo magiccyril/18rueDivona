@@ -30,8 +30,13 @@ prose:
   relativeLinks:  'http://18ruedivona.eu/links.jsonp'
   media:          'media'
   ignore:
-    - index.md
+    - .gitignore
     - _config.yml
+    - CNAME
+    - feed.xml
+    - index.html
+    - LICENSE.txt
+    - links.jsonp
     - /_layouts
     - /_includes
   metadata:

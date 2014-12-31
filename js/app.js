@@ -13,10 +13,10 @@ window.onload = function(){
         labels: labelWeeks,
         datasets: [
             {
-                fillColor : "rgba(151,187,205,0.5)",
-                strokeColor : "rgba(151,187,205,0.8)",
-                highlightFill : "rgba(151,187,205,0.75)",
-                highlightStroke : "rgba(151,187,205,1)",
+                fillColor : "rgba(8, 90, 120, 0.25)",
+                strokeColor : "#FFF",
+                highlightFill : "rgba(8, 90, 120, 0.5)",
+                highlightStroke : "#FFF",
                 data: [0, 0, 22902, 77298, 103581, 99077, 99692, 79304, 98306, 88699, 88741, 92201, 124093, 100867, 117781, 126189, 117571, 121780, 106911, 86992, 86977, 101834, 109994, 96844, 70036, 67534, 76488, 104718, 72947, 82086, 91341, 96568, 79773, 97243, 80301, 115995, 65302, 58427, 111431, 93844, 86083, 69093, 105048, 73793, 73196, 70867, 64236, 63253, 56484, 89042, 30394, 12628]
             }
         ]
@@ -42,12 +42,12 @@ window.onload = function(){
         datasets: [
             {
                 label: "Nombre de pas par jour",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
+                fillColor: "rgba(8, 90, 120, 0.25)",
+                strokeColor: "rgba(8, 90, 120, 0.5)",
+                pointColor: "rgba(8, 90, 120, 0.5)",
+                pointStrokeColor: "#FFFFFF",
+                pointHighlightFill: "#FFFFFF",
+                pointHighlightStroke: "rgba(8, 90, 120, 0.5)",
                 data: [8964.15, 11263.96, 9504.22, 9612.17, 9294.65, 16422.52, 17159.71]
             }
         ]
@@ -244,12 +244,12 @@ window.onload = function(){
         datasets: [
             {
                 label: "Efficacité du sommeil par jour",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
+                fillColor: "rgba(8, 90, 120, 0.25)",
+                strokeColor: "rgba(8, 90, 120, 0.5)",
+                pointColor: "rgba(8, 90, 120, 0.5)",
+                pointStrokeColor: "#FFFFFF",
+                pointHighlightFill: "#FFFFFF",
+                pointHighlightStroke: "rgba(8, 90, 120, 0.5)",
                 data: [68.75, 68.21, 66.89, 69.67, 67.31, 71.33, 69.25]
             }
         ]

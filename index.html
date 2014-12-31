@@ -1,63 +1,230 @@
----
-layout: default
-title: Home
-cover: false
-about: 'about.html'
----
-
-<header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
-    <div class="vertical">
-        <div class="site-head-content" class="inner">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-            <h1 class="blog-title">{{ site.name }}</h1>
-            <h2 class="blog-description">
-                {{ site.description }}.
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
-            </h2>
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rapport annuel 2014 Cyril Gravelier</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <meta name="description" content="Dans la mouvance du Quantified Self, pour la connaissance de soi, rapport annuel 2014 sur différente donnée personnelle de Cyril Gravelier." />
+    <meat name="keywords" content="qs, quantified self, annual report, rapport annuel, connaissance de soi">
+</head>
+<body>
+<header id="site-header">
+    <div id="banner">
+        <div class="row">
+            <h1 class="columns">18 rue Divona</h1>
+        </div>
+    </div>
+    <div id="site-title">
+        <div class="row">
+            <div class="medium-4 columns">
+                <img src="img/banner.jpg" alt="" />
+            </div>
+            <div class="medium-8 columns">
+                <h2 class="columns">2014 en chiffres</h2>
+                <p>Durant cette année 2014, je me suis amusé à collecter quelques données. J'ai essayé d'en rassembler certaines sur cette page pour faire un résumé "en chiffre" de l’année.</p>
+            </div>
         </div>
     </div>
 </header>
 
-<main class="content" role="main">
+<div class="row">
+    <div class="large-12 columns">
+        <div class="panel">
+            <h2>Nombre de pas</h2>
 
-    {% for post in paginator.posts %}
+            <p>L’OMS recommande de ne pas rester inactif (sédentaire) trop longtemps. L’objectif était donc de faire 10 000 pas par jour, soit <strong>70 000 pas par semaine</strong>.</p>
+            <p>Les weekends sont les jours les plus actifs de la semaine. Si l’on considère qu’un pas fait 80 cm, j’ai alors parcouru à pied cette année environ <strong>3444km soit à peu près 11,6% d’un tour du monde !</strong><br/>
+                Mais ceci avec tout de même 206 jours sédentaires cumulés.</p>
 
-    <article class="post">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="row">
+                <div class="large-9 medium-9 columns">
+                    <h4>Nombre de pas par semaine</h4>
+                    <div class="chart-holder">
+                        <canvas id="chart-steps" />
+                    </div>
+                </div>
+                <div class="large-3 medium-3 columns">
+                    <h4>Total</h4>
+                    <p>4 305 785 pas</p>
 
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }}
-            {% if post.content contains '<!--more-->' %}
-                <p><a href="{{ post.url }}">Lire la suite du billet "{{ post.title }}"</a></p>
-            {% endif %}
-        </section>
-    </article>
+                    <h4>Nombre de pas moyen par jour</h4>
+                    <div class="chart-holder">
+                        <canvas id="chart-steps-day-week" />
+                    </div>
 
-    {% endfor %}
+                    <h4>Minutes actives</h4>
+                    <div class="chart-holder">
+                        <canvas id="chart-minutes" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <nav class="pagination" role="pagination">
+<div class="row">
+    <div class="large-12 columns">
+        <div class="panel">
+            <h2>Sport</h2>
 
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-          <a class="newer-posts" href="/" title="Page précédente">&laquo; Billets plus récents</a>
-          {% else %}
-          <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="Page précédente">&laquo; Billets plus récents</a>
-          {% endif %}
-        {% endif %}
+            <p>J’avais deux objectifs de distances cette année : faire 1000km en vélo et 600km en cours à pieds. Les deux sont réalisés à 175%</p>
+            <p>Cumulé, j’ai donc passé <strong>plus de 3 jours sur un vélo, et plus de 4 jours en train de courir</strong>. Cela représente en moyenne une activité de cyclisme tous les 3,6 jours, et une activité de course à pied tous les 3,5 jours.</p>
 
-        <span class="page-number"> Page {{paginator.page}} sur {{paginator.total_pages}} </span>
+            <div class="row">
+                <div class="medium-9 columns">
+                    <h3>Distance des activités sportives, par mois, en kilomètre</h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-activity-distance" />
+                    </div>
+                </div>
+                <div class="large-3 medium-3 columns">
+                    <h3 class="text-center">Total</h3>
+                    <dl>
+                        <dt class="legend bike">Cyclisme</dt>
+                        <dd>1 711 km</dd>
 
-        {% if paginator.next_page %}
-        <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Page suivante">Billets plus anciens &raquo;</a>
-        {% endif %}
-    </nav>
+                        <dt class="legend run">Course à pied</dt>
+                        <dd>1 047 km</dd>
 
+                        <dt class="legend swim">Natation</dt>
+                        <dd>20,1 km</dd>
 
-</main>
+                        <dt class="legend">Autre (ski, canoë)</dt>
+                        <dd>84,37 km</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+                <div class="medium-9 columns">
+                    <h3>Temps des activités sportives, par mois, en minutes</h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-activity-time" />
+                    </div>
+                </div>
+                <div class="large-3 medium-3 columns">
+                    <h3 class="text-center">Total</h3>
+                    <dl>
+                        <dt class="legend bike">Cyclisme</dt>
+                        <dd>3 jours et 18h</dd>
+
+                        <dt class="legend run">Course à pied</dt>
+                        <dd>4 jours et 12h</dd>
+
+                        <dt class="legend swim">Natation</dt>
+                        <dd>10 jeures</dd>
+
+                        <dt class="legend">Autre (ski, canoë)</dt>
+                        <dd>12 heures</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+                <div class="medium-9 columns">
+                    <h3>Nombre d’activités sportives, par mois</h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-activity-count" />
+                    </div>
+                </div>
+                <div class="large-3 medium-3 columns">
+                    <h3 class="text-center">Total</h3>
+                    <dl>
+                        <dt class="legend bike">Cyclisme</dt>
+                        <dd>100<br/><small>(soit une activité de cyclisme tous les 3.6 jours)</small></dd>
+
+                        <dt class="legend run">Course à pied</dt>
+                        <dd>106<br/><small>(soit une activité de course à pied tous les 3.5 jours)</small></dd>
+
+                        <dt class="legend swim">Natation</dt>
+                        <dd>16</dd>
+
+                        <dt class="legend">Autre (ski, canoë)</dt>
+                        <dd>3</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="panel">
+            <h2>Sommeil</h2>
+
+            <p>Au fur et à mesure de l’année, je me suis fixé un objectif : avoir <strong>au moins 5h de sommeil sans mouvement par nuit</strong>. J’ai constaté que dans ces cas-là je me sentais bien au réveil. L’efficacité est calculée par l’outil qui analyse le sommeil. Elle est à peu près constante, peu importe le jour de la semaine.</p>
+            <p>Sur le total il y a quelques chiffres drôles : j’ai passé plus de <strong>3 mois dans le lit</strong>, ou encore j’ai <strong>perdu 4 jours à attendre de m’endormir</strong> !</p>
+
+            <div class="row">
+                <div class="medium-9 columns">
+                    <h3>Temps de sommeil par semaine, en heures<br/><small>En gris : le temps passé dans le lit, en vert : le temps de sommeil sans mouvement.</small></h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-sleep" />
+                    </div>
+                </div>
+                <div class="medium-3 columns">
+                    <h3>Efficacité (%)</h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-sleep-efficency" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h4>Chiffres</h4>
+                    <ul>
+                        <li>Temps passé dans le lit : 3 mois et 9 jours</li>
+                        <li>Temps à attendre de m'endormir : 4 jours</li>
+                        <li>Temps de sommeil sans mouvement : 2 mois et 10 jours</li>
+                        <li>Temps moyen dans le lit : 7h 22min</li>
+                        <li>Temps moyen de sommeil sans mouvement : 5h 6min</li>
+                        <li>Temps moyen pour m'endormir : 17 minutes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="panel">
+            <h2>Poids et masse graisseuse</h2>
+
+            <p>Pour moi l’évolution du poids reste la variable la plus mystérieuse. Impossible de trouver une logique ou de tirer des conclusions en fonctions des différents évènements qu’il a pu se passer.</p>
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3>Poids (kg)</h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-weight" />
+                    </div>
+                </div>
+                <hr/>
+                <div class="small-12 columns">
+                    <h3>Masse graisseuse (% du poids)</h3>
+                    <div class="chart-holder">
+                        <canvas id="chart-fat" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="site-footer">
+    Par Cyril Gravelier. Les données représentées sont des données personnelles. <a href="mailto:cyril@18ruedivona.eu">cyril@18ruedivona.eu</a>
+</footer>
+
+<script src="js/vendor/Chart.min.js"></script>
+<script src="js/vendor/Chart.StackedBar.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

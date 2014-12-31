@@ -57,8 +57,8 @@ window.onload = function(){
     window.chartMinutes = new Chart(ctxMinutes).Pie([
         {
             value: Math.round(295958 / 60 / 24),
-            color:"#F7464A",
-            highlight: "#FF5A5E",
+            color: "#949FB1",
+            highlight: "#A8B3C5",
             label: "Sédentaire"
         },
         {
@@ -75,8 +75,8 @@ window.onload = function(){
         },
         {
             value: Math.round(21515 / 60 / 24),
-            color: "#949FB1",
-            highlight: "#A8B3C5",
+            color:"#F7464A",
+            highlight: "#FF5A5E",
             label: "Très actif"
         }
     ], {

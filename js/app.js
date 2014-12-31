@@ -301,6 +301,11 @@ window.onload = function(){
     });
 
     L.mapbox.accessToken = 'pk.eyJ1IjoibWFnaWNjeXJpbCIsImEiOiJVLTkzcVlrIn0.wHS9G1_Te1aqkGlWXLdGjw';
-    var map = L.mapbox.map('map', 'magiccyril.kehhanc8')
-        .setView([45.15, 1.6], 7);
+    var map = L.mapbox.map('map', 'magiccyril.kehhanc8', {
+        center: [46.5, 1.6],
+        zoom: 6,
+        minZoom: 3,
+        maxZoom: 13,
+        scrollWheelZoom: false
+    }).setView([46.5, 1.6], 6);
 };

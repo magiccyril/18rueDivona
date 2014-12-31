@@ -300,4 +300,7 @@ window.onload = function(){
         pointHitDetectionRadius : 5
     });
 
+    L.mapbox.accessToken = 'pk.eyJ1IjoibWFnaWNjeXJpbCIsImEiOiJVLTkzcVlrIn0.wHS9G1_Te1aqkGlWXLdGjw';
+    var map = L.mapbox.map('map', 'magiccyril.kehhanc8')
+        .setView([45.15, 1.6], 7);
 };

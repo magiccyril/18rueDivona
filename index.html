@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/foundation.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <meta name="description" content="Dans la mouvance du Quantified Self, pour la connaissance de soi, rapport annuel 2014 sur différente donnée personnelle de Cyril Gravelier." />
-    <meat name="keywords" content="qs, quantified self, annual report, rapport annuel, connaissance de soi">
+    <meat name="keywords" content="qs, quantified self, annual report, rapport annuel, connaissance de soi" />
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
 </head>
 <body>
 <header id="site-header">
@@ -71,6 +72,16 @@
 
             <p>J’avais deux objectifs de distances cette année : faire 1000km en vélo et 600km en course à pied. Les deux sont réalisés à 175%</p>
             <p>Cumulé, j’ai donc passé <strong>plus de 3 jours sur un vélo, et plus de 4 jours en train de courir</strong>. Cela représente en moyenne une activité de cyclisme tous les 3,6 jours, et une activité de course à pied tous les 3,5 jours.</p>
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3>Cartes des activités de sport</h3>
+                    <p>Essentiellement à Bordeux, mais aussi un peu en Charente, en Bretagne, dans le Pays Basque, à Évian, Tours, et Montluçon !</p>
+                    <div id="map"></div>
+                </div>
+            </div>
+
+            <hr/>
 
             <div class="row">
                 <div class="medium-9 columns">
@@ -207,7 +218,11 @@
                         <canvas id="chart-weight" />
                     </div>
                 </div>
-                <hr/>
+            </div>
+
+            <hr/>
+
+            <div class="row">
                 <div class="small-12 columns">
                     <h3>Masse graisseuse (% du poids)</h3>
                     <div class="chart-holder">
@@ -223,6 +238,7 @@
     Par Cyril Gravelier. Les données représentées sont des données personnelles. <a href="mailto:cyril@18ruedivona.eu">cyril@18ruedivona.eu</a>
 </footer>
 
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
 <script src="js/vendor/Chart.min.js"></script>
 <script src="js/vendor/Chart.StackedBar.js"></script>
 <script src="js/app.js"></script>

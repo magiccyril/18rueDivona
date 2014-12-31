@@ -24,6 +24,8 @@
         color: #FFF;
     }
 
+#map { height: 600px; width:100%; }
+
 dl {
     text-align: center;
 }
